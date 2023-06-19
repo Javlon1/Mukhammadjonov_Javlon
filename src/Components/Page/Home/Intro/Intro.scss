@@ -1,0 +1,193 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.intro {
+    margin-top: 100px;
+    height: 90vh;
+    background-color: $intro-bc;
+
+    .container {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        background-image: url('../../../../Assets/Img/intro.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+
+        &__content {
+            &__title {
+                font-size: 36px;
+                color: #979797;
+                line-height: 42px;
+            }
+
+            &__name {
+                width: 50%;
+                font-size: 70px;
+                font-weight: 600;
+                line-height: 90px;
+                color: $name;
+                text-transform: uppercase;
+            }
+
+            &__subtitle {
+                width: 50%;
+                color: #0d1218;
+                font-size: 36px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+
+            &__list {
+                &__item {
+                    color: #fff;
+                    height: 36px;
+                    width: 36px;
+                    background-color: #979797;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 36px;
+                    border-radius: 2px;
+                    margin-right: 6px;
+                    transition: .25s;
+
+                    &:hover {
+                        transition: $transition;
+                        background-color: $black;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .intro {
+        .container {
+            &__content {
+                &__title {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+
+                &__name {
+                    font-size: 55px;
+                    font-weight: 500;
+                    line-height: 60px;
+                }
+
+                &__subtitle {
+                    font-size: 26px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .intro {
+        .container {
+            &__content {
+                &__title {
+                    font-size: 30px;
+                    line-height: 42px;
+                }
+
+                &__name {
+                    font-size: 45px;
+                    font-weight: 500;
+                    line-height: 60px;
+                }
+
+                &__subtitle {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .intro {
+        .container {
+            &__content {
+                &__title {
+                    font-size: 25px;
+                    line-height: 42px;
+                }
+
+                &__name {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+
+                &__subtitle {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 454px) {
+    .intro {
+        .container {
+            &__content {
+                &__title {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                &__name {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+
+                &__subtitle {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+
+                &__list {
+                    &__item {
+                        height: 26px;
+                        width: 26px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 323px) {
+    .intro {
+        .container {
+            &__content {
+                &__title {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+
+                &__name {
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+
+                &__subtitle {
+                    font-size: .8rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

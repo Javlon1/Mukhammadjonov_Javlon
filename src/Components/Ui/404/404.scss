@@ -1,0 +1,122 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
+.notFound {
+    margin: 150px 0;
+
+    .container {
+        &__item {
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+
+            h1 {
+                font-size: 13rem;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 35px;
+                color: #646464;
+            }
+
+            span {
+                display: block;
+                color: #646464;
+            }
+
+            a {
+                display: inline-block;
+                color: $white;
+                background-color: $black;
+                padding: 20px 45px;
+                font-size: 18px;
+                transition: $transition;
+
+                &:hover {
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .notFound {
+
+        .container {
+            &__item {
+
+                h1 {
+                    font-size: 10rem;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 30px;
+                }
+
+                span {
+                    text-align: center;
+                }
+
+                a {
+                    padding: 1rem 2.5rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .notFound {
+
+        .container {
+            &__item {
+
+                h1 {
+                    font-size: 8rem;
+                    font-weight: 500;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                }
+
+                span {
+                    text-align: center;
+                }
+
+                a {
+                    padding: 1rem 2.5rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 310px) {
+    .notFound {
+
+        .container {
+            &__item {
+
+                p {
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+}
