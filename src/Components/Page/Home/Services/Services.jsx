@@ -9,7 +9,7 @@ export default function Services() {
     const { lan } = React.useContext(Context)
 
     return (
-        <section className='services'>
+        <section id='services' className='services'>
             {
                 servicesData?.map((e) => (
                     <div key={e.id} className='container'>
