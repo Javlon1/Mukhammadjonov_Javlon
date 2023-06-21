@@ -36,11 +36,11 @@ export default function Header() {
           <ul className={nav ? 'container__nav__list active-nav' : 'container__nav__list'}>
             {
               HeaderData?.map((e) => (
-                <Link key={e.id} to={e.link}>
+                <a key={e.id} href={e.link}>
                   <li className='container__nav__list__item'>
                     {e[`nav_${lan}`]}
                   </li>
-                </Link>
+                </a>
               ))
             }
             <Language />

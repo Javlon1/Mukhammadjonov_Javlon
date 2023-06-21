@@ -1,0 +1,149 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .container {
+        &__title {
+            font-size: 4rem;
+            color: $black;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 130px;
+                height: 4px;
+                left: 0;
+                right: 0;
+                bottom: -1rem;
+                opacity: 1;
+                background-color: $black;
+            }
+        }
+
+        &__all {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &__left {
+                width: 40%;
+
+                &__first {
+
+                    h6 {
+                        color: rgb(182, 182, 182);
+                        line-height: 1.5rem;
+                        margin-top: 2.5rem;
+                    }
+
+                    p {
+                        margin-top: 2rem;
+                        line-height: 1.6rem;
+                        font-weight: 600;
+
+                    }
+                }
+
+                &__third {
+                    margin-top: 2rem;
+
+                    ul {
+                        li {
+                            margin: 1rem 0;
+                            display: flex;
+                            align-items: center;
+
+                            b {
+                                width: 100px;
+                            }
+
+                            p {
+                                margin: 0 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__second {
+                width: 40%;
+
+                h2 {
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-top: 2rem;
+
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about {
+        .container {
+            &__title {
+                font-size: 4rem;
+
+                &:before {
+                    left: auto;
+                    right: auto;
+                }
+            }
+
+            &__all {
+                display: block;
+
+                &__left {
+                    width: 100%;
+                }
+
+                &__second {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 454px) {
+    .about {
+        .container {
+            &__title {
+                font-size: 3.5rem;
+
+                &:before {
+                    left: auto;
+                    right: auto;
+                }
+            }
+
+            &__all {
+                display: block;
+
+                &__left {
+                    width: 100%;
+                }
+
+                &__second {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
