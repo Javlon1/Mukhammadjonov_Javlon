@@ -5,7 +5,9 @@ import './About.scss'
 
 
 export default function About() {
+
     const { lan } = React.useContext(Context)
+    
     return (
         <section id='about' className='about'>
             {

@@ -1,0 +1,141 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.services {
+    background-color: $services-bc;
+    padding: 140px 0px 120px;
+
+    .container {
+
+        &__title {
+            font-size: 4rem;
+            text-align: center;
+            position: relative;
+
+            &:before{
+                content: "";
+                position: absolute;
+                bottom: -1rem;
+                height: 4px;
+                width: 10%;
+                background-color: $black;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__text {
+            margin: 50px 0 60px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $gray;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            &__item {
+                display: flex;
+                transition: $transition;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                margin: 30px;
+                box-shadow: 0px 4px 10px 5px rgba(69, 6, 20, 0.04);
+
+                i {
+                    margin: 5px 25px 5px 5px;
+                    display: inline-block;
+                    border: 1px solid #d5e0e8;
+                    border-radius: 100%;
+                    height: 60px;
+                    width: 60px;
+                    text-align: center;
+                    transition: $transition;
+                    box-shadow: 0px 0px 0px 5px #f3f6f8;
+
+
+                    &:before {
+                        display: block;
+                        color: #8b969e;
+                        font-size: 30px;
+                        padding-top: .7rem;
+                    }
+
+                }
+                div {
+                    width: 200px;
+                    h2 {
+                        font-size: 1.3rem;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        font-weight: 500;
+                    }
+                }
+
+                &:hover {
+                    background-color: $black;
+                    box-shadow: 0px 4px 10px 5px rgb(0, 0, 0);
+
+                    i {
+                        background-color: $black;
+
+                        &:before {
+                            color: $white;
+                        }
+                    }
+
+                    div {
+                        h2 {
+                            color: $white;
+                        }
+
+                        p {
+                            color: $white;
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .services {
+        .container {
+            &__list {
+                &__item {
+                    display: block;
+                    text-align: center;
+                    i{
+                        margin-bottom: 1rem;
+                    }
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 575px) {
+    .services {
+        .container {
+            &__list {
+                &__item {
+                    margin: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    
+}

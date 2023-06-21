@@ -157,3 +157,63 @@ export const aboutData = [
         ]
     }
 ]
+
+export const servicesData = [
+    {
+        id:1,
+        title_ru:'Услуги',
+        title_en:'Services',
+        text_ru:"Вы можете узнать, какие услуги предоставляю вам",
+        text_en:"You can find out what services are provided to you",
+        info:[
+            {
+                id:1,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+            {
+                id:2,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+            {
+                id:3,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+            {
+                id:4,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+            {
+                id:5,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+            {
+                id:6,
+                icon:'bi bi-laptop',
+                title_ru:'Веб-Pазработка',
+                title_en:'Web-Development',
+                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+            },
+        ]
+    }
+]
