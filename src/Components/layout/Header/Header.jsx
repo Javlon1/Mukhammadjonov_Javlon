@@ -8,7 +8,7 @@ import Img from '../../../Assets/Img/logo.jpg'
 
 export default function Header() {
 
-  const { lan } = React.useContext(Context)
+  const { lan, menu, setMenu } = React.useContext(Context)
   const [scrol, setScrol] = React.useState(false)
   const [nav, setNav] = React.useState(false)
   const offSet = 80;
@@ -22,6 +22,8 @@ export default function Header() {
       setScrol(false)
     }
   })
+
+  setMenu(HeaderData[menu - 1].id)
 
   return (
     <header className={scrol ? 'header' : 'header'}>
@@ -37,7 +39,11 @@ export default function Header() {
             {
               HeaderData?.map((e) => (
                 <a key={e.id} href={e.link}>
-                  <li className='container__nav__list__item'>
+                  <li className={`${menu === e.id ? 'container__nav__list__item active' : 'container__nav__list__item'}`}
+                    onClick={() => {
+                      setMenu(e.id)
+                      sessionStorage.setItem('menu', e.id)
+                    }}>
                     {e[`nav_${lan}`]}
                   </li>
                 </a>
