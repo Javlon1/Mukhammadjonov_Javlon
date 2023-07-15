@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'react-router-dom';
 import './Header.scss'
 import { HeaderData } from '../../../Data/Data'
-import Language from './Language/Language';
+import Language from '../Language/Language';
 import { Context } from '../../../Context/Context';
 import Img from '../../../Assets/Img/logo.jpg'
 
@@ -29,12 +29,13 @@ export default function Header() {
     <header className={scrol ? 'header' : 'header'}>
       <div className="container">
         <nav className='container__nav'>
-          <Link to='/'
+          <a href='#'
             onClick={() => {
               sessionStorage.setItem('menu', 1)
+              setMenu(1)
             }}>
             <img className='container__nav__logo' src={Img} alt="" />
-          </Link>
+          </a>
           <ul className={nav ? 'container__nav__list active-nav' : 'container__nav__list'}>
             {
               HeaderData?.map((e) => (

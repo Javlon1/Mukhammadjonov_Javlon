@@ -1,5 +1,4 @@
-import { useState } from 'react';
-// import { Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './App.scss';
 import Header from './Components/layout/Header/Header';
 import About from './Components/Page/Home/About/About';
@@ -7,6 +6,7 @@ import Contact from './Components/Page/Home/Contact/Contact';
 import Intro from './Components/Page/Home/Intro/Intro';
 import Services from './Components/Page/Home/Services/Services';
 import NotFound from './Components/Ui/404/404.jsx';
+import Loader from './Components/Ui/Loader/Loader';
 
 function App() {
 
@@ -48,6 +48,20 @@ function App() {
   //   }
   // };
   //
+  
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const getCounteries = async () => {
+    await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+      setLoading(false)
+    }
+    getCounteries()
+  }, [])
+
+  if (loading) {
+    return <Loader />
+  }
 
   return (
     <div className="App">

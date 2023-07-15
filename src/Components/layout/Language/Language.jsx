@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Context } from '../../../../Context/Context'
-import { Lang } from '../../../../Data/Data'
+import { Context } from '../../../Context/Context'
+import { Lang } from '../../../Data/Data'
 import './Language.scss'
 
 
@@ -12,7 +12,7 @@ const Language = () => {
         setLan(e.target.value)
     };
 
-    React.useEffect(() => {
+    React.useEffect(() => { 
         window.localStorage.setItem('lan', lan)
     }, [lan])
 
