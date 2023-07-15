@@ -4,6 +4,7 @@ import Header from './Components/layout/Header/Header';
 import About from './Components/Page/Home/About/About';
 import Contact from './Components/Page/Home/Contact/Contact';
 import Intro from './Components/Page/Home/Intro/Intro';
+import Item from './Components/Page/Home/Portfolio/item/item';
 import Services from './Components/Page/Home/Services/Services';
 import NotFound from './Components/Ui/404/404.jsx';
 import Loader from './Components/Ui/Loader/Loader';
@@ -48,12 +49,12 @@ function App() {
   //   }
   // };
   //
-  
+
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const getCounteries = async () => {
-    await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+      await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
       setLoading(false)
     }
     getCounteries()
@@ -68,6 +69,7 @@ function App() {
       <Header />
       <Intro />
       <About />
+      <Item />
       <Services />
       <Contact />
 

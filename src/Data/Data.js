@@ -14,15 +14,15 @@ export const HeaderData = [
     },
     {
         id: 3,
-        link: '#services',
-        nav_ru: 'Услуги',
-        nav_en: 'Services'
-    },
-    {
-        id: 4,
         link: '#projects',
         nav_ru: 'Проекты',
         nav_en: 'Projects'
+    },
+    {
+        id: 4,
+        link: '#services',
+        nav_ru: 'Услуги',
+        nav_en: 'Services'
     },
     {
         id: 5,
@@ -158,6 +158,14 @@ export const aboutData = [
     }
 ]
 
+export const portfolioData = [
+    {
+        id: 1,
+        title_en: "PORTFOLIO",
+        title_ru: "ПОРТФОЛИО",
+    }
+]
+
 export const servicesData = [
     {
         id: 1,
@@ -229,21 +237,22 @@ export const contactData = [
             {
                 id: 1,
                 icon: "bi-telephone-fill",
-                tel:"998905251243",
+                tel: "998905251243",
                 text: "90 525 12 43"
             },
             {
                 id: 2,
                 icon: "bi-telephone-fill",
-                tel:"998982702700",
+                tel: "998982702700",
                 text: "98 270 27 00"
             },
             {
                 id: 3,
                 icon: "bi-envelope",
-                email:"muhamedmijotot@gmail.com",
+                email: "muhamedmijotot@gmail.com",
                 text: "muhamedmijotot@gmail.com"
             }
         ]
     }
 ]
+

@@ -1,0 +1,39 @@
+@import '../../../../../Assets/Sass/Veriables.scss';
+
+.item {
+    padding: 140px 0 120px;
+    background-color: $bc;
+    .container {
+        &__title {
+            font-size: 4rem;
+            color: $black;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 130px;
+                height: 4px;
+                left: 0;
+                right: 0;
+                bottom: -1rem;
+                opacity: 1;
+                background-color: $black;
+            }
+        }
+    }
+}
+
+.el {
+    color: $gray;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.act {
+    background-color: $black !important;
+}

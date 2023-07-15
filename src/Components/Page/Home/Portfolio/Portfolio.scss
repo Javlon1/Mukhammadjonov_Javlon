@@ -1,0 +1,80 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+    a {
+        margin: 1.5rem 0;
+        width: 45%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 250px;
+        }
+
+        p {
+            position: absolute;
+            right: 2rem;
+            bottom: 1rem;
+            color: $black;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .portfolio {
+    
+        a {
+            width: 44%;
+    
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .portfolio {
+    
+        a {
+            width: 45%;
+            margin: 1rem;
+    
+            img {
+                width: 100%;
+                height: 180px;
+            }
+            p{
+                right: 1rem;
+                bottom: .1rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .portfolio {
+    
+        a {
+            width: 100%;
+            margin: 1.5rem 0;
+    
+            img {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
