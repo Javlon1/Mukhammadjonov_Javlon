@@ -26,7 +26,7 @@ export default function Portfolio({ projects, loading }) {
                         <img src={img} alt="" />
                         <p>
                             <em>
-                                dasdas
+                                {e.name}
                             </em>
                         </p>
                     </a>

@@ -42,7 +42,6 @@ export default function Item() {
     }
 
     const totalProjects = projects.length
-    console.log(data);
 
     return (
         <section id='projects' className='item'>

@@ -161,8 +161,8 @@ export const aboutData = [
 export const portfolioData = [
     {
         id: 1,
-        title_en: "PORTFOLIO",
-        title_ru: "ПОРТФОЛИО",
+        title_en: "PROJECTS",
+        title_ru: "ПРОЕКТЫ",
     }
 ]
 
