@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.scss';
 import Header from './Components/layout/Header/Header';
 import About from './Components/Page/Home/About/About';
+import Contact from './Components/Page/Home/Contact/Contact';
 import Intro from './Components/Page/Home/Intro/Intro';
 import Services from './Components/Page/Home/Services/Services';
 import NotFound from './Components/Ui/404/404.jsx';
@@ -54,6 +55,7 @@ function App() {
       <Intro />
       <About />
       <Services />
+      <Contact />
 
       <div onClick={top} className={scrol ? "scroll-up active" : "scroll-up"}>
         <svg className='scroll-up__svg' viewBox='-2 -2 52 52'>

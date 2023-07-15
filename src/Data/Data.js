@@ -1,7 +1,7 @@
 export const HeaderData = [
     {
         id: 1,
-        link: '/',
+        link: '#',
         nav_ru: 'домой',
         nav_en: 'Home'
     },
@@ -160,60 +160,90 @@ export const aboutData = [
 
 export const servicesData = [
     {
-        id:1,
-        title_ru:'Услуги',
-        title_en:'Services',
-        text_ru:"Вы можете узнать, какие услуги предоставляю вам",
-        text_en:"You can find out what services are provided to you",
-        info:[
+        id: 1,
+        title_ru: 'Услуги',
+        title_en: 'Services',
+        text_ru: "Вы можете узнать, какие услуги предоставляю вам",
+        text_en: "You can find out what services are provided to you",
+        info: [
             {
-                id:1,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 1,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
             {
-                id:2,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 2,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
             {
-                id:3,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 3,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
             {
-                id:4,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 4,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
             {
-                id:5,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 5,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
             {
-                id:6,
-                icon:'bi bi-laptop',
-                title_ru:'Веб-Pазработка',
-                title_en:'Web-Development',
-                text_ru:"Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
-                text_en:"Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
+                id: 6,
+                icon: 'bi bi-laptop',
+                title_ru: 'Веб-Pазработка',
+                title_en: 'Web-Development',
+                text_ru: "Глобальная коммерция 24/365, тогда как гранулированные технологии. Полностью влияет.",
+                text_en: "Globall morph 24/365 commerce whereas granular technologies. Completely impact.",
             },
+        ]
+    }
+]
+
+export const contactData = [
+    {
+        id: 1,
+        title_en: "Contact",
+        title_ru: "Контакт",
+        text_en: "contact with me",
+        text_ru: "связаться со мной",
+        info: [
+            {
+                id: 1,
+                icon: "bi-telephone-fill",
+                tel:"998905251243",
+                text: "90 525 12 43"
+            },
+            {
+                id: 2,
+                icon: "bi-telephone-fill",
+                tel:"998982702700",
+                text: "98 270 27 00"
+            },
+            {
+                id: 3,
+                icon: "bi-envelope",
+                email:"muhamedmijotot@gmail.com",
+                text: "muhamedmijotot@gmail.com"
+            }
         ]
     }
 ]

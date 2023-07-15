@@ -11,8 +11,8 @@ export default function About() {
     return (
         <section id='about' className='about'>
             {
-                aboutData?.map((e) => (
-                    <div key={e.id} className='container'>
+                aboutData?.map((e, i) => (
+                    <div key={i} className='container'>
                         <h2 className='container__title'>{e[`title_${lan}`]}</h2>
                         <div className="container__all">
 

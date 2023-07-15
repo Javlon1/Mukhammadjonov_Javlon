@@ -1,0 +1,227 @@
+@import '../../../../Assets/Sass/Veriables.scss';
+
+.contact {
+    padding: 140px 0px 175px;
+    background-color: $intro-bc;
+
+    .container {
+
+        &__title {
+            text-align: center;
+            font-size: 4rem;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                width: 130px;
+                height: 4px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                bottom: -1rem;
+                opacity: 1;
+                background-color: $black;
+            }
+        }
+
+        &__subtitle {
+            margin: 2rem auto;
+            width: 40%;
+            text-align: center;
+            margin-bottom: 70px;
+            color: $gray;
+            font-size: 1.3rem;
+        }
+
+        &__contactUs {
+            position: relative;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 3px;
+
+            &__map {
+                width: 100%;
+                height: 450px;
+                border-radius: 3px;
+                margin-bottom: 20px;
+            }
+
+            &__info {
+                &__list {
+                    &__item {
+                        margin-top: .5rem;
+                        padding: 20px 0px 20px;
+                        border-bottom: 1px dashed #dae3e9;
+                        display: flex;
+                        align-items: center;
+
+                        &:last-child {
+                            border: none;
+                            padding-bottom: 10px;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: $gray;
+                            transition: $transition;
+                        }
+
+                        i {
+                            margin: 5px 25px 5px 15px;
+                            display: inline-block;
+                            border: 1px solid #d5e0e8;
+                            border-radius: 100%;
+                            height: 60px;
+                            width: 60px;
+                            text-align: center;
+                            transition: $transition;
+                            box-shadow: 0px 0px 0px 5px #f3f6f8;
+
+
+                            &:before {
+                                display: block;
+                                color: #8b969e;
+                                font-size: 30px;
+                                padding-top: .9rem;
+                            }
+
+                        }
+
+                        &:hover {
+                            p {
+                                color: $black;
+                            }
+
+                            i {
+                                background-color: $black;
+
+                                &:before {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__form {
+                background-color: #fff;
+                padding: 60px;
+                border-radius: 5px;
+                position: absolute;
+                right: 30px;
+                bottom: -35px;
+                height: auto;
+                width: 65%;
+                opacity: .9;
+                box-shadow: 0px 0px 18px rgba(5, 79, 69, .16);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                input {
+                    width: 47%;
+                    background-color: #f3f6f8;
+                    border: 1px solid #d5e0e8;
+                    border-radius: 3px;
+                    padding: 12px;
+                    margin-bottom: 20px;
+                    color: #979797;
+                    outline: none;
+
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 250px;
+                    background-color: #f3f6f8;
+                    border: 1px solid #d5e0e8;
+                    border-radius: 3px;
+                    padding: 12px;
+                    margin-bottom: 20px;
+                    color: #979797;
+                    outline: none;
+                }
+
+                button {
+                    margin-bottom: 4rem;
+                    border: none;
+                    width: 100%;
+                    background-color: $gray;
+                    color: #fff;
+                    text-transform: uppercase;
+                    border-radius: 3px;
+                    padding: 12px;
+                    transition: .25s;
+                    outline: none;
+
+                    &:hover {
+                        background-color: $name;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        .container {
+            &__title {
+                font-size: 4rem;
+            }
+
+            &__subtitle {
+                width: 55%;
+                font-size: 1.3rem;
+            }
+
+            &__contactUs {
+                &__map {
+                    height: 300px;
+                }
+
+                &__info {
+                    margin-bottom: 50px;
+                }
+
+                &__form {
+                    padding: 30px;
+                    width: 60%;
+                    position: initial;
+                    width: 100%;
+                    box-shadow: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .contact {
+        .container {
+
+            &__subtitle {
+                width: 75%;
+            }
+
+            &__contactUs {
+                &__form {
+                    display: block;
+
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
