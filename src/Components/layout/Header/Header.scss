@@ -7,8 +7,7 @@
     z-index: 1999;
     display: flex;
     align-items: center;
-    background-color: $white;
-    box-shadow: 0 2px 5px rgba(53, 48, 46, 0.2);
+    background-color: $intro-bc;
 
     .container {
         &__nav {
@@ -216,6 +215,11 @@
         }
     }
 
+}
+
+.headerBc{
+    background-color: $white;
+    box-shadow: 0 2px 5px rgba(53, 48, 46, 0.2);
 }
 
 .active-nav {

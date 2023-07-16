@@ -10,7 +10,7 @@ export default function Item() {
     const { lan } = React.useContext(Context)
     const [projects, setProjects] = React.useState([])
     const [currentPage, setCurrentPage] = React.useState(1)
-    const [countriesPerPage] = React.useState(6)
+    const [countriesPerPage] = React.useState(4)
     const [loading, setLoading] = React.useState(true)
 
     const [data] = React.useState(portfolioData[0])

@@ -11,7 +11,7 @@ export default function Header() {
   const { lan, menu, setMenu } = React.useContext(Context)
   const [scrol, setScrol] = React.useState(false)
   const [nav, setNav] = React.useState(false)
-  const offSet = 80;
+  const offSet = 85;
 
   const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
@@ -26,7 +26,7 @@ export default function Header() {
   setMenu(HeaderData[menu - 1].id)
 
   return (
-    <header className={scrol ? 'header' : 'header'}>
+    <header className={scrol ? 'header headerBc' : 'header'}>
       <div className="container">
         <nav className='container__nav'>
           <a href='#'

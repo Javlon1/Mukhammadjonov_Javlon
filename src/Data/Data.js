@@ -26,12 +26,6 @@ export const HeaderData = [
     },
     {
         id: 5,
-        link: '#blog',
-        nav_ru: 'болг',
-        nav_en: 'Blog'
-    },
-    {
-        id: 6,
         link: '#contact',
         nav_ru: 'контакты',
         nav_en: 'Contact'
@@ -48,8 +42,6 @@ export const Lang = [
         lang: 'en'
     },
 ]
-
-
 
 export const introData = [
     {
@@ -255,4 +247,3 @@ export const contactData = [
         ]
     }
 ]
-
