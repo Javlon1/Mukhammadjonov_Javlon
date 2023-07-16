@@ -23,7 +23,7 @@ export default function Item() {
                     if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
                     return resp.json()
                 })
-                .then(data => setProjects(data))
+                .then(data => setProjects(portfolioData))
                 .catch(error => console.error(error.message))
             setLoading(false)
         }

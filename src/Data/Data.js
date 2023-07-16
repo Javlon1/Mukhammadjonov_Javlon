@@ -155,6 +155,13 @@ export const portfolioData = [
         id: 1,
         title_en: "PROJECTS",
         title_ru: "ПРОЕКТЫ",
+        project:[
+            {
+                id:1,
+                name:"inware",
+                link:"https://inware.vercel.app/"
+            }
+        ]
     }
 ]
 
