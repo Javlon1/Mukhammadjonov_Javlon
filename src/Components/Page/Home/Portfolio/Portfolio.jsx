@@ -4,7 +4,6 @@ import { portfolioData } from '../../../../Data/Data'
 import Loader from '../../../Ui/Loader/Loader'
 import './Portfolio.scss'
 import img1 from '../../../../Assets/Img/project1.jpg'
-import img2 from '../../../../Assets/Img/project1.jpg'
 
 
 export default function Portfolio({ projects, loading }) {
@@ -12,8 +11,6 @@ export default function Portfolio({ projects, loading }) {
     if (loading) {
         return <Loader />
     }
-
-    const projectImg = `${img1}`
 
     return (
         <section className='portfolio'>
@@ -25,7 +22,7 @@ export default function Portfolio({ projects, loading }) {
                             key={i.id}
                             target="_blank"
                         >
-                            <img src={projectImg} alt="" />
+                            <img src={img1} alt={i.name} />
                             <p>
                                 <em>
                                     {i.name}

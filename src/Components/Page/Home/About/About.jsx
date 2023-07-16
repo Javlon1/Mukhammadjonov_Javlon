@@ -38,7 +38,7 @@ export default function About() {
 
 
                             <div className="container__all__second">
-                                <h2>MY SKILLS</h2>
+                                <h2>{lan == 'en' ? 'MY SKILLS' : 'МОИ НАВЫКИ'}</h2>
                                 <span>
                                     {
                                         e.skills?.map((i, k) => (
