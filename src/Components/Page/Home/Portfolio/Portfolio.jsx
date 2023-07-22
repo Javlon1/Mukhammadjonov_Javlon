@@ -4,6 +4,7 @@ import { portfolioData } from '../../../../Data/Data'
 import Loader from '../../../Ui/Loader/Loader'
 import './Portfolio.scss'
 import img1 from '../../../../Assets/Img/project1.jpg'
+import img2 from '../../../../Assets/Img/logo.jpg'
 
 
 export default function Portfolio({ projects, loading }) {
@@ -22,7 +23,7 @@ export default function Portfolio({ projects, loading }) {
                             key={i.id}
                             target="_blank"
                         >
-                            <img src={img1} alt={i.name} />
+                            <img src={i.id == 1 ? img1 : i.id == 2 ? img2 : ''} alt={i.name} />
                             <p>
                                 <em>
                                     {i.name}

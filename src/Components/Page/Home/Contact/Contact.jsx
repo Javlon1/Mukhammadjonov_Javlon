@@ -10,7 +10,7 @@ export default function Contact() {
 
     const formReg = (e) => {
         e.preventDefault()
-
+ 
         console.log('ok');
     }
 
