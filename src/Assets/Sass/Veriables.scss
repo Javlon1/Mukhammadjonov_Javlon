@@ -10,6 +10,7 @@ $bc: #F6F8FA;
 // @media only screen and (max-width: px) {}
 //
 
+//GET
 //
 // const [loading, setLoading] = React.useState(true)
 //
@@ -26,4 +27,50 @@ $bc: #F6F8FA;
 //         }
 //     getCounteries()
 // }, [])
+//
+
+//POST
+//
+// const urlApi = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+//
+// const formReg = (e) => {
+//
+//     e.preventDefault()
+//     const el = e.target.elements
+//
+//     let message = `<b>заявка</b>\n`
+//     message += `<em>Имя: </em> ${el.name.value}\n`
+//     message += `<em>Number: </em> ${el.number.value}\n`
+//     message += `<em>Subject: </em> ${el.subject.value}\n`
+//     message += `<em>Text: </em> ${el.text.value}`
+//
+//     const getCounteries = async () => {
+//         await fetch(urlApi, {
+//             method: 'POST',
+//             headers: {
+//                 'Content-type': 'application/json',
+//                 'Accept': 'application/json',
+//                 'Access-Control-Allow-Origin': '*'
+//             },
+//             body: JSON.stringify({
+//                 chat_id: chatId,
+//                 parse_mode: "html",
+//                 text: message
+//             })
+//         })
+//             .then(resp => {
+//                 if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+//                 return resp.json()
+//             })
+//             .then(data => console.log(data))
+//             .catch(error => console.error(error.message))
+//     }
+//    
+//     getCounteries()
+//
+//     e.target.elements.name.value = ''
+//     e.target.elements.number.value = ''
+//     e.target.elements.subject.value = ''
+//     e.target.elements.text.value = ''
+// }
 //
