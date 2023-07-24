@@ -1,11 +1,13 @@
+@import '../../../Assets/Sass/Veriables.scss';
+
 .language{
     .select{
         background-color: transparent;
         border: transparent;
         color: #000;
         option{
-            background-color: #000;
-            color: #fff;
+            background-color: $bc;
+            color: $black;
         }
     }
 }
