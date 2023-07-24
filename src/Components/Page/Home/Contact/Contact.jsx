@@ -20,7 +20,7 @@ export default function Contact() {
         e.preventDefault()
         const el = e.target.elements
 
-        let message = `<b>Сообщения от клиентов</b>\n`
+        let message = `<b>Сообщения от клиентов</b>\n\n`
         message += `<em>Имя: </em> ${el.name.value}\n`
         message += `<em>Number: </em> ${el.number.value}\n`
         message += `<em>Subject: </em> ${el.subject.value}\n`
@@ -54,7 +54,7 @@ export default function Contact() {
         setTimeout(() => {
             setSuc(false)
             setErr(false)
-        }, 3000)
+        }, 5000)
     }
 
     return (
