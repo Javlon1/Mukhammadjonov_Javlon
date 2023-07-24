@@ -6,6 +6,9 @@ import './Contact.scss'
 
 export default function Contact() {
 
+    const [suc, setSuc] = React.useState(false)
+    const [err, setErr] = React.useState(false)
+
     const { lan } = React.useContext(Context)
 
     const TOKEN = "6444223689:AAFxMZ7OtGgRxLIy6IfhzxBXXJ9tHmUd-WY"
@@ -37,14 +40,10 @@ export default function Contact() {
                     text: message
                 })
             })
-                .then(resp => {
-                    if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
-                    return resp.json()
-                })
-                .then(data => console.log(data))
-                .catch(error => console.error(error.message))
+                .then(resp => setSuc(true))
+                .catch(error => setErr(true))
         }
-        
+
         getCounteries()
 
         e.target.elements.name.value = ''
@@ -62,6 +61,9 @@ export default function Contact() {
                             <h2 className='container__title'>{e[`title_${lan}`]}</h2>
                             <p className='container__subtitle'><em>{e[`text_${lan}`]}</em></p>
                             <div className="container__contactUs">
+                                <div className={suc ? "send acti" : "send"}>{lan == 'en' ? 'sent' : 'отправлено'}</div>
+                                <div className={err ? "error acti" :  "error"}>{lan == 'en' ? 'error' : 'ошибка'}</div>
+
                                 <div className="container__contactUs__map">
                                     <iframe src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4876.99878707187!2d72.3288522771734!3d40.739349435939225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bced2ca7c5470d%3A0x94dd6d4ba9d395e1!2z0YPQu9C40YbQsCDQnNGD0YHRgtCw0LrQuNC70LvQuNC6IDIsINCQ0L3QtNC40LbQsNC9LCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e1!3m2!1sru!2s!4v1689419610812!5m2!1sru!2s`} width="100%" height="100%" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                 </div>

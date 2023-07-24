@@ -172,6 +172,33 @@
     }
 }
 
+.send {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 1rem;
+    bottom: 34.5rem;
+    z-index: 99;
+    right: 2rem;
+    background-color: #D1E7DD;
+    border: 1px solid #a0e0c4;
+    border-radius: .4rem;
+    font-weight: 600;
+}
+.error{
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 1rem;
+    bottom: 34.5rem;
+    z-index: 99;
+    right: 2rem;
+    background-color: #eec9c9;
+    border: 1px solid #e0a0a0;
+    border-radius: .4rem;
+    font-weight: 600;
+
+}
 @media only screen and (max-width: 991px) {
     .contact {
         .container {
@@ -204,6 +231,14 @@
             }
         }
     }
+    .send{
+        width: 75%;
+        bottom: 35rem;
+    }
+    .error{
+        width: 75%;
+        bottom: 35rem;
+    }
 }
 
 
@@ -226,4 +261,16 @@
             }
         }
     }
+    .error{
+        width: 75%;
+        bottom: 40rem;
+    }
+    .send{
+        width: 75%;
+        bottom: 40rem;
+    }
+}
+
+.acti{
+    display: block !important;
 }
