@@ -20,11 +20,11 @@ export default function Contact() {
         e.preventDefault()
         const el = e.target.elements
 
-        let message = `<b>Сообщения от клиентов</b>\n\n`
+        let message = `<b>Сообщения от клиента</b>\n\n`
         message += `<em>Имя: </em> ${el.name.value}\n`
         message += `<em>Number: </em> ${el.number.value}\n`
         message += `<em>Subject: </em> ${el.subject.value}\n`
-        message += `<em>Text: </em> ${el.text.value}`
+        message += `<em>Text: </em> ${el.text.value}\n`
 
         const getCounteries = async () => {
             await fetch(urlApi, {
