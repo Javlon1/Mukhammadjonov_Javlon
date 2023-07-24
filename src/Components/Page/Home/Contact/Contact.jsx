@@ -8,10 +8,49 @@ export default function Contact() {
 
     const { lan } = React.useContext(Context)
 
+    const TOKEN = "6444223689:AAFxMZ7OtGgRxLIy6IfhzxBXXJ9tHmUd-WY"
+    const chatId = "-1001860144177"
+    const urlApi = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
     const formReg = (e) => {
+
         e.preventDefault()
- 
-        console.log('ok');
+        const el = e.target.elements
+
+        let message = `<b>заявка</b>\n`
+        message += `<em>Имя: </em> ${el.name.value}\n`
+        message += `<em>Number: </em> ${el.number.value}\n`
+        message += `<em>Subject: </em> ${el.subject.value}\n`
+        message += `<em>Text: </em> ${el.text.value}`
+
+        const getCounteries = async () => {
+            await fetch(urlApi, {
+                method: 'POST',
+                headers: {
+                    'Content-type': 'application/json',
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    parse_mode: "html",
+                    text: message
+                })
+            })
+                .then(resp => {
+                    if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+                    return resp.json()
+                })
+                .then(data => console.log(data))
+                .catch(error => console.error(error.message))
+        }
+        
+        getCounteries()
+
+        e.target.elements.name.value = ''
+        e.target.elements.number.value = ''
+        e.target.elements.subject.value = ''
+        e.target.elements.text.value = ''
     }
 
     return (
@@ -49,10 +88,10 @@ export default function Contact() {
                                 </div>
 
                                 <form className='container__contactUs__form' onSubmit={formReg} action="#">
-                                    <input type="text" name="name" placeholder="Name:" />
-                                    <input type="email" name="email" placeholder="Email:" />
-                                    <input type="text" name="subject" placeholder="Subject:" />
-                                    <textarea rows="5" name="text" placeholder="Text:" />
+                                    <input type="text" name="name" placeholder="Name:" required />
+                                    <input type="number" name="number" placeholder="Number:" required />
+                                    <input type="text" name="subject" placeholder="Subject:" required />
+                                    <textarea rows="5" name="text" placeholder="Text:" required />
                                     <button type='submit'>submit</button>
                                 </form>
 

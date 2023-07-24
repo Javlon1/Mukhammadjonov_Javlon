@@ -161,7 +161,13 @@ export const portfolioData = [
                 name:"inware",
                 link:"https://inware.vercel.app/",
                 img:'img1'
-            }
+            },
+            {
+                id:2,
+                name:"test",
+                link:"https://inware.vercel.app/",
+                img:'img1'
+            },
         ]
     }
 ]

@@ -1,6 +1,4 @@
 import * as React from 'react'
-import { Context } from '../../../../Context/Context'
-import { portfolioData } from '../../../../Data/Data'
 import Loader from '../../../Ui/Loader/Loader'
 import './Portfolio.scss'
 import img1 from '../../../../Assets/Img/project1.jpg'

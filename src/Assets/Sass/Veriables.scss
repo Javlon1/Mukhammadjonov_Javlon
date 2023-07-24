@@ -6,5 +6,24 @@ $transition: .5s all ease;
 $gray: #979797;
 $bc: #F6F8FA;
 
-
+//
 // @media only screen and (max-width: px) {}
+//
+
+//
+// const [loading, setLoading] = React.useState(true)
+//
+// React.useEffect(() => {
+//     const getCounteries = async () => {
+//         await fetch('https://63c2c490b0c286fbe5f347e9.mockapi.io/users')
+//             .then(resp => {
+//                 if (!resp.ok) throw new Error(`oшибка: ${resp.status}`)
+//                 return resp.json()
+//             })
+//             .then(data => setBlogs(data))
+//             .catch(error => console.error(error.message))
+//             setLoading(false)
+//         }
+//     getCounteries()
+// }, [])
+//
