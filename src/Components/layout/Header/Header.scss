@@ -84,8 +84,7 @@
                     z-index: 1;
 
                     &:before {
-                        border-top-left-radius: 30px;
-                        border-bottom-left-radius: 30px;
+                        border-radius: 30px;
                         position: absolute;
                         content: '';
                         left: 0;
@@ -99,8 +98,7 @@
                     }
 
                     &:after {
-                        border-top-right-radius: 30px;
-                        border-bottom-right-radius: 30px;
+                        border-radius: 30px;
                         position: absolute;
                         content: '';
                         right: 0;
@@ -116,12 +114,12 @@
                     &:hover {
                         color: #fff;
                         &:before {
-                            width: 50%;
+                            width: 100%;
                             opacity: 1;
                         }
 
                         &:after {
-                            width: 50%;
+                            width: 100%;
                             opacity: 1;
                         }
                     }

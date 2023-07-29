@@ -24,7 +24,7 @@ export default function Contact() {
         message += `<em>Имя: </em> ${el.name.value}\n`
         message += `<em>Number: </em> ${el.number.value}\n`
         message += `<em>Subject: </em> ${el.subject.value}\n`
-        message += `<em>Text: </em> ${el.text.value}\n`
+        message += `<em>Text: </em> ${el.text.value}`
 
         const getCounteries = async () => {
             await fetch(urlApi, {
@@ -106,7 +106,6 @@ export default function Contact() {
                         </div>
                     ))
                 }
-
             </div>
         </section>
     )
